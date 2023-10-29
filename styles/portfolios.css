@@ -1,0 +1,10 @@
+main.portfolios-container{
+   display:flex;
+   justify-content: center;
+}
+
+table.portfolios{
+   border-collapse: separate;
+   border-spacing: 28px;
+}
+
