@@ -8,3 +8,7 @@ table.portfolios{
    border-spacing: 28px;
 }
 
+table.portfolios tr:not(:first-child){
+   border-bottom: 1px solid #fff;
+}
+
