@@ -1,14 +1,26 @@
 main.portfolios-container{
    display:flex;
    justify-content: center;
+   align-items: center;
+   margin: 16px;
 }
 
-table.portfolios{
-   border-collapse: separate;
-   border-spacing: 28px;
+.portfolios{
+   width: 1384px;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
 }
 
-table.portfolios tr:not(:first-child){
-   border-bottom: 1px solid #fff;
+.portfolios article{
+   display: flex;
 }
 
+.portfolios p{
+   flex: 1;
+}
+
+.portfolios hr{
+   width: 110%;
+   align-self: center;
+}
