@@ -1,26 +1,31 @@
-main.portfolios-container{
-   display:flex;
-   justify-content: center;
-   align-items: center;
-   margin: 16px;
-}
-
-.portfolios{
-   width: 1384px;
+.portfolios-container{
+   width: 952px;
    display: flex;
    flex-direction: column;
    gap: 16px;
 }
 
-.portfolios article{
-   display: flex;
-}
-
-.portfolios p{
-   flex: 1;
-}
-
-.portfolios hr{
+.portfolios-container hr{
    width: 110%;
    align-self: center;
 }
+
+.portfolio-row{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+.portfolio-row>p:first-child{
+   width: calc(100%/10*3);
+}
+
+.portfolio-row>p:not(:last-child):not(:first-child){
+   width: calc(100%/10*2);
+}
+
+.portfolio-row>p:last-child{
+   width: calc(100%/10*1);
+   text-align: center;
+}
+

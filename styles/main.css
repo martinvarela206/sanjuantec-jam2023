@@ -1,4 +1,18 @@
-main{
-   background-color: #2B2B2B;
-   color: #FFFFFF;
+.main-container{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 48px;
+   position: relative;
+}
+
+.background{
+   background-image: url("../assets/fondo-web.svg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 1114px;
+   height: 891px;
+   position: absolute;
+   right: 0;
+   z-index: -1000;
 }
