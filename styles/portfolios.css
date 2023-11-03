@@ -17,15 +17,15 @@
 }
 
 .portfolio-row>p:first-child{
-   width: calc(100%/10*3);
+   width: 30%;
 }
 
 .portfolio-row>p:not(:last-child):not(:first-child){
-   width: calc(100%/10*2);
+   width: 30%;
 }
 
 .portfolio-row>p:last-child{
-   width: calc(100%/10*1);
+   width: 10%;
    text-align: center;
 }
 
