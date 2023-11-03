@@ -81,3 +81,8 @@ header{
    margin: 10px;
    height: 24px;
 }
+
+.contact{
+   display: flex;
+   gap: 16px;
+}
