@@ -17,7 +17,7 @@ header{
    gap: 32px;
 }
 
-.navbar>a{
+.navbar a{
    text-decoration: none;
    display: inline-block;
    color: #FFF;
@@ -25,7 +25,7 @@ header{
    font-size: 24px;
 }
 
-.navbar>a:hover::after {
+.navbar a:hover::after {
    content: ''; 
    width: 100%; 
    height: 3px;
@@ -46,12 +46,12 @@ header{
    }
 }
 
-.mark>img{
+.mark img{
    width: 99px;
    height: 70px;
 }
 
-.login>img{
+.login img{
    width: 67px;
    height: 67px;
 }
@@ -61,7 +61,7 @@ header{
    transform: translateY(-24px);
 }
 
-.search>input{
+.search input{
    font-size: 24px;
    position: absolute;
    padding: 8px;
@@ -72,11 +72,11 @@ header{
    color: #0394FD;
 }
 
-.search>input:focus{
+.search input:focus{
    outline: none;
 }
 
-.search>img{
+.search img{
    position: absolute;
    margin: 10px;
    height: 24px;

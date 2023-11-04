@@ -6,13 +6,10 @@
    position: relative;
 }
 
-.background{
+.body-background{
    background-image: url("../assets/fondo-web.svg");
-   background-size: cover;
-   background-repeat: no-repeat;
-   width: 1114px;
-   height: 891px;
-   position: absolute;
-   right: 0;
-   z-index: -1000;
+   background-repeat: repeat-y;
+   background-size: 1113px 891px;
+   background-position: right top;
+   background-attachment: fixed;
 }
