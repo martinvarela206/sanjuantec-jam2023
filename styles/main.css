@@ -9,7 +9,7 @@
 .body-background{
    background-image: url("../assets/fondo-web.svg");
    background-repeat: repeat-y;
-   background-size: 1113px 891px;
+   background-size: 1113px 881px;
    background-position: right top;
    background-attachment: fixed;
 }
