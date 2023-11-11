@@ -1,0 +1,220 @@
+.presentacion{
+    display: flex;
+}
+
+.texto{
+    padding-top: 100px;
+    padding-left: 200px;  
+}
+
+.texto p {
+    text-align: right;
+}
+
+
+.contenido{
+padding-top: 30px;
+padding-left: 100px;
+padding-right: 100px;
+
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;̣/*Saca estilos a la lista*/
+}
+
+ul.slider{
+    position: relative;
+}
+
+ul.slider li{
+    position: absolute;
+    left:0;
+    top:0;
+    opacity: 0;/*No se ve ningun elemento*/
+    width: inherit;/*Mismo ancho que el padre*/
+    height: inherit;
+    transition: opacity 2s ;
+    background-image: url('../assets/fondo-web.svg');
+}
+
+ul.slider li img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;/*Para que no se deforme la imagen*/
+}
+
+ul.slider li:first-child{
+     opacity: 1;
+}
+
+ul.slider li:target{
+    /*Cuando pulso sobre cada li cambia*/
+    opacity: 1
+}
+
+ul.slider .menuindex li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menuindex{
+    margin-top: 450px;
+    text-align: center;
+}
+.menuindex li{
+    display: inline-block;
+    text-align: center;
+}
+.menuindex li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: #848688;
+    gap: 10px;
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+    border-radius: 100%;
+}
+
+
+.menuindex li a:active{
+    background-color: #0394FD;
+}
+
+.menuindex li a:hover{
+    background-color: #0394FD;
+}
+footer{
+    background-color: #1D1C1C;
+}
+.arriba{
+    text-align: center;
+}
+.arriba h1{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.abajo{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+}
+.pie1{
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+.pie2{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (min-width:0px) and (max-width:650px){
+    .navbar{
+        display: none;
+        /*No muestre el navegador*/
+    }
+    .login{
+        display: none;
+    }
+    .contact{
+        display: none;
+    }
+    .mark img{
+        width: 70px;
+        height: 50px;
+    }
+    header{
+        height: 100px;
+        background-color: #1D1C1C;
+        
+        display: flex;
+        justify-content: flex-start;
+    }
+    .search input{
+        margin-top: 350px;
+        margin-bottom: 150px;
+        position: relative;
+        width: 70%;
+        justify-content: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        display: block;
+    }
+    .presentacion{
+        display: block;
+    }
+
+    ul.slider li img {
+        width: 70%;
+        height: 60%;
+        object-fit: cover;
+        text-align: center;
+    }
+    .texto{
+        display: block;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .texto p{
+        width: 70%;
+        text-align: center;
+        padding: 0px;
+    }
+    .presentacion img{
+        width: auto;
+        height: auto;
+        display: block;
+    }
+    
+    .main-container{
+        justify-content: center;
+    }
+
+    .contenido{
+        padding-left: 5%;
+        padding-right: 5%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu{
+        display: block;
+        position: relative;
+        margin-top: 550px;
+        align-items: center;
+        width: 300px;
+    }
+    .menu li{
+        align-items: center;
+    }
+   .pie1{
+    font-size: 10px;
+        }
+.pie2{
+     font-size: 10px;
+     padding: 10px;
+     }
+     .arriba p {
+        font-size: 14px;
+     }
+     .arriba h1{
+        font-size: 16px;
+     }
+} 
